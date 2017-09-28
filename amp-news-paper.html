@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">  
+<title>Amp dron</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+ <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'/>   
+<link href='https://3.bp.blogspot.com/-9Sla5QpMbRg/Wcb430h01PI/AAAAAAAARAM/Pn_tii5M3_0HL44gBXFI4PzMfZY1cH6KACLcBGAs/s1600/android-icon-192x192.png' rel='apple-touch-icon'/>
+<link href='https://1.bp.blogspot.com/-8I0BRd-XjNg/Wcb5A_tM_WI/AAAAAAAARAQ/zInhwMQ6cpMONF0z1pi7GQpAWrmQfdY8gCLcBGAs/s1600/apple-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'/>
+<link href='https://4.bp.blogspot.com/-2DlFx2C4bPA/Wcb5I257zzI/AAAAAAAARAU/wMbShAR6Kvc33h_KTihauAeF6arfoYNGwCLcBGAs/s1600/apple-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'/>
+<link href='https://4.bp.blogspot.com/-AwVlIlQiXgY/Wcb5OQNQX7I/AAAAAAAARAY/OE6W_1JfyVc8H29VsPZKD-fPiNLRUMCrgCLcBGAs/s1600/apple-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'/>
+<link href='https://4.bp.blogspot.com/-MlduhvR7kcE/Wcb5TomVhMI/AAAAAAAARAc/KYk5wTkEPsUpbLs_VBvbmSShKGwnMcLjACLcBGAs/s1600/apple-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'/>
+<link href='https://4.bp.blogspot.com/-nRh6UuF1cy4/Wcb5jgi6LlI/AAAAAAAARAg/g-h2RAy-zpsUpLmhfTEVAQ2i89tewkdJQCLcBGAs/s1600/android-icon-192x192.png' rel='icon' sizes='192x192'/>
+ 
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+    	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+    	body{color: #212121;font-size: 16px;background-color: #e9ebee;font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', 'Open Sans', "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;line-height:28px}
+    	.clear:before,.clear:after{content: " ";display: table;} .clear:after{clear: both;}
+    	*, *::after, *::before{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    	strong,b{font-weight:bold;}
+    	i { font-style: italic; }
+    	
+    	.wrapper{overflow-wrap: break-word; word-wrap: break-word; font-weight: 400;max-width:700px; margin: 0 auto;background: #fff}
+  /* Widget CSS */
+.author-box {
+    overflow: hidden;
+    margin: 10px auto;
+}
+.author-box img {
+    float: left;
+     height: 380px;
+    object-fit: cover;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.author-box-text {
+        padding: 20px;
+}
+.author-box-text span {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    color: #c0af94;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    text-transform: Uppercase;
+}
+.author-box-text b {
+    font-size: 36px;
+    font-family: Oswald;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #131313;
+    display: block;
+    text-transform: Uppercase;
+}
+.author-box-text p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+.author-box-text .read-more {
+    border-top: 2px solid rgba(19,19,19,0.5);
+    border-bottom: 2px solid rgba(19,19,19,0.5);
+    color: #131313;
+    font-size: 11px;
+    line-height: 20px;
+    display: inline-block;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+@media only screen and (max-width: 768px) {
+.author-box img {
+    margin-right: 0;
+    max-width: 100%;
+    float: none;
+    height: auto;
+    clear: both;
+}
+.author-box-text {
+padding: 10px;
+text-align: left;
+}
+}
+/* fin widget CSS */
+  .footer-bottom {
+    background: #fff;
+    border-top: 4px solid #8e24aa;
+}
+.one-half {
+    background: #8e24aa;
+    color: #fff;
+    cursor: default;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    max-width: 100%;
+    float: left;
+    padding: 10px 0 20px;
+}    
+.copyright-left, .copyright-right {
+    float: none;
+    color: #ffffff;
+    text-align: center;
+}    
+ .post-img-small-thum {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+   a {
+    color: #fff;
+} 
+    
+  </style>
+
+</head>
+<body>
+ <div class="wrapper"> 
+  <!-- Seccion  -->
+
+<div class="author-box row">
+<img alt="Web design" class="avatar" src="https://2.bp.blogspot.com/-8BS-EXIGzuk/WbNfwS0yWVI/AAAAAAAAQwE/d3NvWZnLKkAptZZLvdErZm4u8T94tNhbgCLcBGAs/s1600/Amp-News-paper-Premium-Blogger-Template-Amp-HTML.png"/>
+
+<div class="author-box-text">
+<span>Ayudadeblogger.com</span>
+<b>Amp Dron Amp HTML Blogger Template</b>
+    
+      <br/>
+   <center>
+       <div class="read-more anchor-hover">
+   Comprar ahora - Click Now 👇
+ </center>
+      
+     <br/>
+    
+    <center>   
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RG2F3ZKBLFJQJ">
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</center>
+       <br/>
+<p>Amp News paper una plantilla Premium de Blogger en Amp HTML, disponibilidad inmediata a la hora de instalar esta plantilla en cualquier blog de Blogger.</p>
+
+    <center>
+<a class="read-more anchor-hover" href="http://www.ayudadeblogger.com/p/contactos-ayuda-de-blogger.html" target='_blank'>Contactos</a>
+ </center>
+     <br>
+         
+     <center>
+<p><strong> <i class='fa fa-phone-square'> 593 994589032</i></strong></p>
+<p><strong> <i class='fa fa-user'> Luis Chávez</i></strong></p>
+    </center>   
+<br>
+</div>
+</div>
+    
+  <div class="footer-bottom">
+</div>
+   <br/>
+     
+   <div class="one-half"> 
+   <div class='copyright-right' id='adb'>Created by <a href='http://www.ayudadeblogger.com/' target='_blank' title='Luis Chávez'>Ayudadeblogger.com</a></div>
+     </div>  
+    
+    
+ </div>
+ 
+
+  </div>
+</body>
+</html>
